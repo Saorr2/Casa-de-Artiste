@@ -7,7 +7,9 @@
         <title>Casa de Artisté Website</title>
 
         <!-- link google fonts Montserrat and Open Sans here -->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
         <!-- after completing my html for all three pages, make sure to properly link 
         css stylesheet to each page -->
@@ -18,11 +20,11 @@
     <body>
         <!-- make sure headers and footers are identical throughout all three pages -->
 
-        <header id="home" class="container">
+        <header class="global-header">
                 <!-- add logo to src tag -->
                 <img src="images/" alt="Casa de Artisté logo">
                 <h1>Casa de Artisté</h1>
-                <nav>
+                <nav class="global-nav">
                     <!-- make sure I've properly linked each page to the correct 
                     href attribute in the anchor tags below -->
                     <ul>
@@ -34,20 +36,22 @@
         </header>
 
         <main class="container">
-            <section id="hero-image">
-                <h2>Casa de Artisté</h2>
+            <h2>Casa de Artisté</h2>
+            <div class="hero-image">
                 <img src="images/hero-image.jpg" alt="windows of a house in the sunlight with red, blue, and yellow designed hispanic flags hanging directly from each side of houses throughout the streets of the city.">
-            </section>
+            </div>
 
             <!-- fill with content about the website, the artists, and the artworks.
             serves as an introduction to the entire website. -->
-            <h2>Lorem Ipsum.</h2>
-            <p>Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.</p>
-            <p>Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.</p>
+            <section id="about-info">
+                <h3>Lorem Ipsum.</h3>
+                <p>Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.</p>
+                <p>Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.Lorem Ipsum.</p>
+            </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Casa de Artisté. All rights reserved.</p>
+        <footer class="global-footer">
+            <p>&copy; 2026 Casa de Artisté.</p>
         </footer>
     </body>
 </html>

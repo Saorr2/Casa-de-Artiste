@@ -1,0 +1,234 @@
+/* CSS by Samantha Orr */
+
+/* imported Montserrat for headers and Open Sans for body text (paragraphs) from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* root variables */
+:root {
+
+    /* colors */
+    --white: #FFFFFF;
+    --black: #000000;
+    --dk-gray: #333333;
+    --burgundy: #650019;
+    --dk-blue: #002D72;
+
+    /* fonts */
+    --header-font: "Montserrat", sans-serif;
+    --paragraph-font: "Open Sans", sans-serif;
+}
+
+/* adjust as needed throughout styling website */
+body {
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    font-family: var(--header-font);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* global styles to assist with a clean and organized layout as well as structure */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-width: 400px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* global header and navigation styles */
+.global-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--burgundy);
+    padding: 8px 0;
+}
+
+.global-header h1 {
+    visibility: hidden;
+}
+
+/* when I create and add my logo, make sure to properly styled and sized and add some margin to the left of it 
+so that it doesn't touch the edge of the page.*/
+
+.global-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.global-nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--header-font);
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.global-nav ul li a:hover {
+    background-color: var(--white);
+    color: var(--burgundy);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+
+/* main styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* global footer styles */
+footer {
+    background-color: var(--burgundy);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-family: var(--header-font);
+    font-size: 0.80rem;
+    font-weight: 400;
+}
+
+/* homepage styles */
+.container h2 {
+    visibility: hidden;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+#about-info h3 {
+    justify-self: center;
+    font-size: 1.5rem;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+#about-info p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+
+
+
+
+/* artists page styles */
+
+
+
+
+/* artworks page styles */
+
+
+
+/* !!!! after completely styling my website in a mobile-first format,
+add media queries (tablets and desktops) to adjust the layout and 
+design for larger screens. !!!! */
+
+
+/* media queries (medium)
+
+@media screen and (min-width: 600px) {
+} */
+
+
+/* media queries (large)
+
+@media screen and (min-width: 900px){
+} */
