@@ -105,7 +105,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
+.container-1,
+.container-2,
+.container-3 {
     margin: 0 auto;
     line-height: 1.5;
 }
@@ -177,8 +179,9 @@ footer {
     font-weight: 400;
 }
 
+
 /* homepage styles */
-.container h2 {
+.container-1 h2 {
     visibility: hidden;
 }
 
@@ -202,22 +205,172 @@ footer {
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 18px;
+    width: 55ch;
 }
 
 
-
-
-
 /* artists page styles */
+.container-2 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 16px;
+}
 
+.artist-1-image img,
+.artist-3-image img {
+    max-width: 180px;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+}
 
+.artist-2-image img,
+.artist-4-image img {
+    max-width: 180px;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+/* .artist-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+} */
+
+.artist-content-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 20px;
+}
+
+.artist-content-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 40px;
+}
+
+.artist-content-1 h3,
+.artist-content-2 h3 {
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.artist-content-1 p,
+.artist-content-2 p {
+    font-size: 0.80rem;
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+    width: 33ch;
+}
+
+.artist-1-info,
+.artist-2-info,
+.artist-3-info,
+.artist-4-info {
+    display: block;
+    align-content: center;
+}
+
+.artist-1-info a,
+.artist-2-info a,
+.artist-3-info a,
+.artist-4-info a {
+    display: inline-block;
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border: none;
+    padding: 6px 12px;
+    font-family: var(--paragraph-font);
+    font-weight: 500;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    width: 85%;
+    text-align: center;
+}
+
+.artist-content-1 a:hover,
+.artist-content-2 a:hover {
+    background-color: var(--burgundy);
+    color: var(--white);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 700;
+}
+
+/* 
+.artist-content-1 h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-weight: 600;
+} */
+
+/* .artist-content-1 p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    width: 55ch;
+} */
 
 
 /* artworks page styles */
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#artworks h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+#artworks img {
+    max-width: 450px;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#artworks h3 {
+    text-align: center;
+    font-size: 0.90rem;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+#artworks p {
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    width: 55ch;
+}
 
 
-
-/* !!!! after completely styling my website in a mobile-first format,
+/* !!!! after completely styling my website in mobile-first format,
 add media queries (tablets and desktops) to adjust the layout and 
 design for larger screens. !!!! */
 
