@@ -208,6 +208,31 @@ footer {
     width: 55ch;
 }
 
+.about-artists-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    font-family: var(--paragraph-font);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    width: 300px;
+}
+
+.about-artists-btn:hover {
+    background-color: var(--burgundy);
+    color: var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 600;
+}
 
 /* artists page styles */
 .container-2 h2 {
