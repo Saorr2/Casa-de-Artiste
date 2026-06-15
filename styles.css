@@ -179,34 +179,89 @@ footer {
     font-weight: 400;
 }
 
-
 /* homepage styles */
 .container-1 h2 {
     visibility: hidden;
 }
 
 .hero-image img {
-    max-width: 500px;
+    max-width: 517px;
     height: auto;
     overflow: hidden;
     object-fit: fill;
 }
 
-#about-info h3 {
+#about-info h3,
+#our-mission h3 {
     justify-self: center;
     font-size: 1.5rem;
-    margin-top: 14px;
     margin-bottom: 16px;
     font-weight: 700;
+    font-family: var(--header-font);
 }
 
-#about-info p {
+#about-info h3 {
+    margin-top: 20px;
+}
+
+#about-info p,
+#our-mission p {
     font-size: 0.85rem;
+    font-family: var(--paragraph-font);
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 18px;
     width: 55ch;
 }
+
+#featured-artist h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+#featured-artist img {
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#featured-artist h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+#featured-artwork h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+#featured-artwork img {
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+    object-fit: fill;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#featured-artwork h4 {
+    text-align: center;
+    font-size: 0.70rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}  
 
 .about-artists-btn {
     display: inline-block;
@@ -223,6 +278,8 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
     width: 300px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 .about-artists-btn:hover {
