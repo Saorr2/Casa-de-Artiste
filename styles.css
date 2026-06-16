@@ -145,7 +145,7 @@ so that it doesn't touch the edge of the page.*/
     text-decoration: none;
     color: var(--white);
     font-family: var(--header-font);
-    font-weight: 500;
+    font-weight: 600;
     padding: 5px 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
     align-items: center;
@@ -221,7 +221,7 @@ footer {
     text-align: center;
     color: var(--black);
     font-weight: 700;
-    margin-top: 16px;
+    margin-top: 30px;
 }
 
 #featured-artist img {
@@ -246,7 +246,7 @@ footer {
     text-align: center;
     color: var(--black);
     font-weight: 700;
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
 #featured-artwork img {
@@ -261,28 +261,28 @@ footer {
 #featured-artwork h4 {
     text-align: center;
     font-size: 0.70rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-weight: 600;
 }  
 
 .about-artists-btn {
     display: inline-block;
     text-align: center;
-    justify-content: center;
     background-color: var(--dk-blue);
     color: var(--white);
     border: none;
     padding: 8px 16px;
     font-family: var(--paragraph-font);
     font-weight: 500;
-    font-size: 0.90rem;
+    font-size: 0.85rem;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
-    width: 200px;
+    width: 250px;
     margin-top: 24px;
     margin-bottom: 12px;
+    font-weight: 700;
 }
 
 .about-artists-btn:hover {
@@ -291,7 +291,8 @@ footer {
     border-radius: 5px;
     text-decoration: none;
     transition: color 0.3s;
-    font-weight: 600;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* artists page styles */
@@ -333,8 +334,9 @@ footer {
 .artist-content-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .artist-content-2 {
@@ -342,12 +344,12 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .artist-content-1 h3,
 .artist-content-2 h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 4px;
     margin-bottom: 18px;
     font-weight: 600;
@@ -356,11 +358,13 @@ footer {
 
 .artist-content-1 p,
 .artist-content-2 p {
-    font-size: 0.80rem;
+    display: block;
+    font-size: 0.75rem;
     font-family: var(--paragraph-font);
-    line-height: 1.6;
-    width: 33ch;
+    line-height: 1.4;
+    width: 31ch;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .artist-1-info,
@@ -385,10 +389,10 @@ footer {
     font-size: 0.85rem;
     cursor: pointer;
     border-radius: 4px;
-    margin-top: 12px;
+    margin-top: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
-    width: 85%;
+    width: 95%;
     text-align: center;
 }
 
@@ -400,6 +404,7 @@ footer {
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 700;
+    text-align: center;
 }
 
 /* 
