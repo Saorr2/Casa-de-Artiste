@@ -268,18 +268,19 @@ footer {
 .about-artists-btn {
     display: inline-block;
     text-align: center;
+    justify-content: center;
     background-color: var(--dk-blue);
     color: var(--white);
     border: none;
     padding: 8px 16px;
     font-family: var(--paragraph-font);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.90rem;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
-    width: 250px;
+    width: 200px;
     margin-top: 24px;
     margin-bottom: 12px;
 }
@@ -309,6 +310,7 @@ footer {
     height: auto;
     overflow: hidden;
     object-fit: fill;
+    margin-top: 20px;
 }
 
 .artist-2-image img,
@@ -317,6 +319,7 @@ footer {
     height: auto;
     overflow: hidden;
     object-fit: fill;
+    margin-top: 20px;
 }
 
 /* .artist-content-1 {
@@ -338,6 +341,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -345,8 +349,9 @@ footer {
 .artist-content-2 h3 {
     font-size: 1rem;
     margin-top: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     font-weight: 600;
+    text-align: center;
 }
 
 .artist-content-1 p,
@@ -355,6 +360,7 @@ footer {
     font-family: var(--paragraph-font);
     line-height: 1.6;
     width: 33ch;
+    text-align: center;
 }
 
 .artist-1-info,
