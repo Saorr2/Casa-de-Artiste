@@ -62,7 +62,8 @@ table {
     --black: #000000;
     --dk-gray: #333333;
     --burgundy: #650019;
-    --dk-blue: #002D72;
+    --dk-blue: #071859;
+    --yellow: #F2C14E;
 
     /* fonts */
     --header-font: "Montserrat", sans-serif;
@@ -149,15 +150,16 @@ so that it doesn't touch the edge of the page.*/
     transition: background-color 0.3s ease, color 0.3s ease;
     align-items: center;
     border-radius: 4px;
+    font-size: 1.1rem;
 }
 
 .global-nav ul li a:hover {
-    background-color: var(--white);
-    color: var(--burgundy);
+    /* background-color: var(--yellow); */
+    color: var(--yellow);
     border-radius: 4px;
     text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 600;
+    transition: color 0.4s;
+    font-weight: 700;
 }
 
 /* main styles */
@@ -283,8 +285,8 @@ footer {
 }
 
 .about-artists-btn:hover {
-    background-color: var(--burgundy);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: var(--burgundy);
     border-radius: 5px;
     text-decoration: none;
     transition: color 0.3s;
