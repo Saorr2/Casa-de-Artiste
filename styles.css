@@ -357,21 +357,30 @@ footer {
 
 .artist-content-1 h3,
 .artist-content-2 h3 {
-    font-size: 1.1rem;
-    margin-top: 4px;
+    font-size: 1rem;
+    margin-top: 8px;
     margin-bottom: 18px;
     font-weight: 600;
     text-align: center;
 }
 
-.artist-content-1 p,
-.artist-content-2 p {
+.artist-content-1 p {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     font-family: var(--paragraph-font);
     line-height: 1.4;
-    width: 31ch;
-    text-align: center;
+    width: 34ch;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.artist-content-2 p {
+    display: block;
+    font-size: 0.70rem;
+    font-family: var(--paragraph-font);
+    line-height: 1.4;
+    width: 32ch;
+    text-align: left;
     margin-bottom: 16px;
 }
 
