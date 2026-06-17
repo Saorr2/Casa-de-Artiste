@@ -480,13 +480,87 @@ add media queries (tablets and desktops) to adjust the layout and
 design for larger screens. !!!! */
 
 
-/* media queries (medium)
+/* media queries (medium) */
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .global-header {
+        justify-content: space-between;
+    }
+    
+    .global-nav ul {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .artist-content-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .artist-content-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .artist-1-info, .artist-2-info, .artist-3-info, .artist-4-info {
+        display: block;
+        align-content: center;
+    }
+
+    #artworks h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--black);
+        font-weight: 700;
+        margin-top: 22px;
+    }
+
+    #artworks h3 {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+
+    #artworks p {
+        text-align: center;
+        font-size: 0.90rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 55ch;
+    }
+
+    #artworks img {
+        max-width: 500px;
+        height: auto;
+        overflow: hidden;
+        object-fit: fill;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
 } */
 
 
-/* media queries (large)
+/* media queries (large) */
 
-@media screen and (min-width: 900px){
+/* @media screen and (min-width: 900px){
 } */
