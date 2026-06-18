@@ -473,7 +473,7 @@ img {
 }
 
 #artworks img {
-    max-width: 400px;
+    max-width: 380px;
     height: auto;
     overflow: hidden;
     object-fit: fill;
@@ -485,14 +485,14 @@ img {
 
 #artworks h3 {
     text-align: center;
-    font-size: 0.90rem;
+    font-size: 0.70rem;
     margin-bottom: 14px;
     font-weight: 600;
 }
 
 #artworks p {
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -629,12 +629,12 @@ design for larger screens. !!!! */
 
     .artist-content-2 .artist-2-image,
     .artist-content-2 .artist-4-image {
-        order: 2;
+        order: 1;
     }
 
     .artist-content-2 .artist-2-info,
     .artist-content-2 .artist-4-info {
-        order: 1;
+        order: 2;
     }
 
     .artist-content-1 h3,
@@ -673,4 +673,166 @@ design for larger screens. !!!! */
 /* media queries (large) */
 
 @media screen and (min-width: 1024px){
+    .container-1,
+    .container-2,
+    .container-3 {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .global-header {
+        justify-content: space-between;
+        padding: 12px 24px;
+    }
+
+    .global-nav ul {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .global-nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .hero-image img {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    #our-mission,
+    #about-info {
+        display: flex;
+        max-width: 900px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #our-mission h3,
+    #about-info h3,
+    #featured-artist h3,
+    #featured-artwork h3 {
+        font-size: 1.8rem;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    #our-mission p,
+    #about-info p {
+        font-size: 1.1rem;
+        max-width: 70ch;
+    }
+
+    #featured-artwork h4 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    #featured-artist img {
+        max-width: 500px;
+        height: auto;
+    }
+
+    #featured-artist h4 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    #featured-artwork img {
+        max-width: 600px;
+        height: auto;
+    }
+
+    .about-artists-btn {
+        width: 350px;
+        font-size: 1.1rem;
+    }
+
+    .artist-content-1,
+    .artist-content-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        align-items: center;
+    }
+
+    .artist-content-2 .artist-2-image,
+    .artist-content-2 .artist-4-image {
+        order: 2;
+    }
+
+    .artist-content-2 .artist-2-info,
+    .artist-content-2 .artist-4-info {
+        order: 1;
+    }
+
+    .artist-content-1 h3,
+    .artist-content-2 h3 {
+        font-size: 1.4rem;
+        margin-top: 8px;
+        margin-bottom: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .artist-content-1 p,
+    .artist-content-2 p {
+        font-size: 0.90rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        max-width: 55ch;
+        text-align: left;
+    }
+
+    .artist-1-image img,
+    .artist-2-image img,
+    .artist-3-image img,   
+    .artist-4-image img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    #artworks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #artworks h2 {
+        grid-column: 1 / -1;
+    }
+
+    /* #artworks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    #artworks img {
+        max-width: 550px;
+        height: auto;
+    }
+
+    #artworks p {
+        font-size: 0.90rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 60ch;
+    }
+
+    #artworks h3 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
 }
