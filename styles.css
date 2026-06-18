@@ -110,6 +110,7 @@ html {
 .container-3 {
     margin: 0 auto;
     line-height: 1.5;
+    width: 90%;
 }
 
 /* global header and navigation styles */
@@ -262,7 +263,7 @@ img {
 }
 
 #featured-artwork img {
-    max-width: 400px;
+    max-width: 380px;
     height: auto;
     overflow: hidden;
     object-fit: fill;
@@ -472,13 +473,14 @@ img {
 }
 
 #artworks img {
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
     overflow: hidden;
     object-fit: fill;
     margin-top: 20px;
     margin-bottom: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 #artworks h3 {
@@ -494,7 +496,7 @@ img {
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 55ch;
+    max-width: 55ch;
 }
 
 
@@ -503,13 +505,126 @@ add media queries (tablets and desktops) to adjust the layout and
 design for larger screens. !!!! */
 
 /* media queries (medium) */
-@media (min-width: 768px) {
+/* previous media query was min-width: 768px */
+
+@media (min-width: 600px) {
+    .container-1,
+    .container-2,
+    .container-3 {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .global-header {
+        justify-content: space-between;
+        padding: 10px 18px;
+    }
+
+    .global-nav ul {
+        align-items: center;
+        gap: 0.80rem;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    #our-mission,
+    #about-info {
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #our-mission h3,
+    #about-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    #our-mission p,
+    #about-info p {
+        font-size: 1rem;
+        max-width: 70ch;
+    }
+
+    #featured-artist h3,
+    #featured-artwork h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--black);
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    #featured-artist h4,
+    #featured-artwork h4 {
+        text-align: center;
+        font-size: 0.90rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    #featured-artist img {
+        max-width: 400px;
+        height: auto;
+    }
+
+    #featured-artwork img {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .about-artists-btn {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    /* .hero-image img {
+        max-width: 900px;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        object-fit: fill;
+    } */
+
+    #artists h2,
+    #artworks h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--black);
+        font-weight: 700;
+        margin-top: 22px;
+    }
+
     .artist-content-1,
     .artist-content-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 4rem;
         align-items: center;
+    }
+
+    .artist-content-2 {
+        gap: 6rem;
+    }
+
+    .artist-1-image img,
+    .artist-2-image img,
+    .artist-3-image img,
+    .artist-4-image img {
+        max-width: 220px;
+        height: auto;
     }
 
     .artist-content-2 .artist-2-image,
@@ -521,85 +636,39 @@ design for larger screens. !!!! */
     .artist-content-2 .artist-4-info {
         order: 1;
     }
-}
 
-/* @media screen and (min-width: 600px) {
-    .container-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-image {
-        display: flex;
-        justify-content: center;
-    }
-
-    .global-header {
-        justify-content: space-between;
-    }
-    
-    .global-nav ul {
-        align-items: center;
-        gap: 16px;
-    }
-
-    .artist-content-1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    .artist-content-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6rem;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-
-    .artist-1-info, .artist-2-info, .artist-3-info, .artist-4-info {
-        display: block;
-        align-content: center;
-    }
-
-    #artworks h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        color: var(--black);
-        font-weight: 700;
-        margin-top: 22px;
-    }
-
-    #artworks h3 {
-        text-align: center;
-        font-size: 1.1rem;
-        margin-bottom: 14px;
+    .artist-content-1 h3,
+    .artist-content-2 h3 {
+        font-size: 1.2rem;
+        margin-top: 8px;
+        margin-bottom: 18px;
         font-weight: 600;
+        text-align: center;
+    }
+
+    .artist-content-1 p,
+    .artist-content-2 p {
+        font-size: 0.80rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        max-width: 55ch;
+        text-align: left;
+    }
+
+    #artworks img {
+        max-width: 520px;
+        height: auto;
     }
 
     #artworks p {
-        text-align: center;
         font-size: 0.90rem;
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 20px;
-        width: 55ch;
+        max-width: 55ch;
     }
-
-    #artworks img {
-        max-width: 500px;
-        height: auto;
-        overflow: hidden;
-        object-fit: fill;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        align-items: center;
-    }
-} */
-
+}
 
 /* media queries (large) */
 
