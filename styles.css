@@ -604,6 +604,26 @@ design for larger screens. !!!! */
         color: var(--black);
         font-weight: 700;
         margin-top: 22px;
+        font-family: var(--header-font);
+    }
+
+    #artists h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--black);
+        font-weight: 600;
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+
+    #artists p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        max-width: 55ch;
+        text-align: center;
+        font-family: var(--paragraph-font);
     }
 
     .artist-content-1,
@@ -760,6 +780,15 @@ design for larger screens. !!!! */
         font-size: 1.1rem;
     }
 
+    #artists h3 {
+        font-size: 1.6rem;
+        text-align: center;
+        color: var(--black);
+        font-weight: 600;
+        margin-top: 22px;
+        margin-bottom: 30px;
+    }
+
     .artist-content-1,
     .artist-content-2 {
         display: grid;
@@ -836,7 +865,6 @@ design for larger screens. !!!! */
         max-width: 60ch;
     }
 
-    #artists h3,
     #artworks h3 {
         text-align: center;
         font-size: 1rem;
