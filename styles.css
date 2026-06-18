@@ -415,7 +415,7 @@ img {
     color: var(--white);
     width: 240px;
     border: none;
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-family: var(--paragraph-font);
     font-weight: 500;
     font-size: 0.85rem;
@@ -425,6 +425,7 @@ img {
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
     text-align: center;
+    justify-content: center'
 }
 
 .artist-content-1 a:hover,
@@ -585,8 +586,8 @@ design for larger screens. !!!! */
     }
 
     .about-artists-btn {
-        width: 300px;
-        font-size: 1rem;
+        width: 250px;
+        font-size: 0.90rem;
     }
 
     /* .hero-image img {
@@ -642,7 +643,7 @@ design for larger screens. !!!! */
     .artist-2-image img,
     .artist-3-image img,
     .artist-4-image img {
-        max-width: 230px;
+        max-width: 210px;
         height: auto;
     }
 
@@ -667,11 +668,11 @@ design for larger screens. !!!! */
     
     .artist-content-1 p,
     .artist-content-2 p {
-        font-size: 0.83rem;
+        font-size: 0.80rem;
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 18px;
-        max-width: 55ch;
+        max-width: 50ch;
         text-align: center;
     }
 
@@ -679,8 +680,10 @@ design for larger screens. !!!! */
     .artist-2-info a,
     .artist-3-info a,
     .artist-4-info a {
-        width: 80%;
+        width: 300px;
         font-size: 0.85rem;
+        text-align: center;
+        justify-self: center;
     }
 
     #artworks img {
@@ -838,7 +841,7 @@ design for larger screens. !!!! */
     .artist-2-image img,
     .artist-3-image img,   
     .artist-4-image img {
-        max-width: 280px;
+        max-width: 240px;
         height: auto;
     }
 
