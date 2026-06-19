@@ -193,7 +193,7 @@ footer {
 }
 
 .hero-image img {
-    max-width: 405px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -213,7 +213,7 @@ footer {
 
 #about-info p,
 #our-mission p {
-    font-size: 0.80rem;
+    font-size: 0.75rem;
     font-family: var(--paragraph-font);
     line-height: 1.6;
     margin-top: 10px;
