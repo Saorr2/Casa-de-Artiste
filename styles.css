@@ -402,8 +402,9 @@ img {
 .artist-2-info,
 .artist-3-info,
 .artist-4-info {
-    display: block;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .artist-1-info a,
@@ -425,7 +426,7 @@ img {
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
     text-align: center;
-    justify-content: center'
+    justify-content: center;
 }
 
 .artist-content-1 a:hover,
@@ -629,21 +630,18 @@ design for larger screens. !!!! */
 
     .artist-content-1,
     .artist-content-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        align-items: center;
-    }
-
-    .artist-content-2 {
-        gap: 2rem;
-    }
+        grid-template-columns: 280px 1fr;
+        gap: 3rem;
+        max-width: 1000px;
+        margin: 0 auto 4rem;
+}
 
     .artist-1-image img,
     .artist-2-image img,
     .artist-3-image img,
     .artist-4-image img {
-        max-width: 210px;
+        display: block;
+        width: 280px;
         height: auto;
     }
 
@@ -652,10 +650,16 @@ design for larger screens. !!!! */
         order: 1;
     }
 
-    .artist-content-2 .artist-2-info,
+    /* .artist-content-2 .artist-2-info,
     .artist-content-2 .artist-4-info {
         order: 2;
-    }
+    } */
+
+    .artist-content-1,
+    .artist-content-2 {
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+}
 
     .artist-content-1 h3,
     .artist-content-2 h3 {
@@ -672,8 +676,16 @@ design for larger screens. !!!! */
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 18px;
-        max-width: 50ch;
-        text-align: center;
+        max-width: none;
+        text-align: left;
+    }
+
+    .artist-info-1,
+    .artist-2-info,
+    .artist-3-info,
+    .artist-4-info {
+        width: 100%;
+        text-align: left;
     }
 
     .artist-1-info a,
@@ -684,6 +696,7 @@ design for larger screens. !!!! */
         font-size: 0.85rem;
         text-align: center;
         justify-self: center;
+        margin-left: 0;
     }
 
     #artworks img {
@@ -804,7 +817,7 @@ design for larger screens. !!!! */
     .artist-content-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 6rem;
+        gap: 4rem;
         align-items: center;
     }
 
@@ -827,6 +840,13 @@ design for larger screens. !!!! */
         text-align: center;
     }
 
+    .artist-1-info,
+    .artist-2-info,
+    .artist-3-info,
+    .artist-4-info {
+    max-width: 600px;
+}
+
     .artist-content-1 p,
     .artist-content-2 p {
         font-size: 0.90rem;
@@ -839,10 +859,11 @@ design for larger screens. !!!! */
 
     .artist-1-image img,
     .artist-2-image img,
-    .artist-3-image img,   
+    .artist-3-image img,
     .artist-4-image img {
-        max-width: 240px;
-        height: auto;
+        width: 240px;
+        height: 300px;
+        object-fit: cover;
     }
 
     #artworks {
