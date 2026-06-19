@@ -102,6 +102,7 @@ nav a {
 }
 
 html {
+    min-width: 400px;
     scroll-behavior: smooth;
 }
 
@@ -110,7 +111,7 @@ html {
 .container-3 {
     margin: 0 auto;
     line-height: 1.5;
-    width: 90%;
+    width: 100%;
 }
 
 /* global header and navigation styles */
@@ -162,7 +163,6 @@ so that it doesn't touch the edge of the page.*/
 }
 
 .global-nav ul li a:hover {
-    /* background-color: var(--yellow); */
     color: var(--yellow);
     border-radius: 4px;
     text-decoration: none;
@@ -190,8 +190,8 @@ footer {
 }
 
 /* homepage styles */
-img {
-    max-width: 100%;
+.global-header img {
+    max-width: 300px;
     height: auto;
 }
 
@@ -200,10 +200,8 @@ img {
 }
 
 .hero-image img {
-    max-width: 430px;
+    max-width: 517px;
     height: auto;
-    overflow: hidden;
-    object-fit: fill;
 }
 
 #about-info h3,
@@ -494,8 +492,8 @@ design for larger screens. !!!! */
     }
 
     .hero-image img {
-        max-width: 900px;
-        width: 100%;
+        max-width: 1022px;
+        height: auto;
     }
 
     #our-mission,
@@ -678,14 +676,13 @@ design for larger screens. !!!! */
     }
 
     .hero-image img {
-        max-width: 1200px;
-        width: 100%;
+        max-width: 1390px;
+        height: auto;
     }
 
     #our-mission,
     #about-info {
         display: flex;
-        max-width: 900px;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -696,21 +693,20 @@ design for larger screens. !!!! */
     #about-info h3,
     #featured-artist h3,
     #featured-artwork h3 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-bottom: 16px;
         font-weight: 700;
     }
 
     #our-mission p,
     #about-info p {
-        font-size: 1.1rem;
-        max-width: 70ch;
+        font-size: 0.95rem;
     }
 
-    #featured-artwork h4 {
+    #featured-artist h4 {
         text-align: center;
-        font-size: 1rem;
-        margin-bottom: 8px;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
         font-weight: 600;
     }
 
@@ -719,7 +715,7 @@ design for larger screens. !!!! */
         height: auto;
     }
 
-    #featured-artist h4 {
+    #featured-artwork h4 {
         text-align: center;
         font-size: 1rem;
         margin-bottom: 8px;
@@ -731,9 +727,10 @@ design for larger screens. !!!! */
         height: auto;
     }
 
-    .about-artists-btn {
+    .about-artists-btn{
         width: 350px;
         font-size: 1.1rem;
+        margin-top: 25px;
     }
 
     #artists h3 {
