@@ -167,7 +167,7 @@ so that it doesn't touch the edge of the page.*/
     border-radius: 4px;
     text-decoration: none;
     transition: color 0.4s;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* main styles */
@@ -200,7 +200,7 @@ img {
 }
 
 .hero-image img {
-    max-width: 517px;
+    max-width: 430px;
     height: auto;
     overflow: hidden;
     object-fit: fill;
@@ -209,7 +209,7 @@ img {
 #about-info h3,
 #our-mission h3 {
     justify-self: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 16px;
     font-weight: 700;
     font-family: var(--header-font);
@@ -221,16 +221,17 @@ img {
 
 #about-info p,
 #our-mission p {
-    font-size: 0.85rem;
+    font-size: 0.80rem;
     font-family: var(--paragraph-font);
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 18px;
     max-width: 55ch;
+    text-align: center
 }
 
 #featured-artist h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: var(--black);
     font-weight: 700;
@@ -255,7 +256,7 @@ img {
 }
 
 #featured-artwork h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     color: var(--black);
     font-weight: 700;
@@ -309,8 +310,8 @@ img {
 }
 
 /* artists page styles */
-.container-2 h2 {
-    font-size: 1.5rem;
+#artists h2 {
+    font-size: 1.4rem;
     text-align: center;
     color: var(--black);
     font-weight: 700;
@@ -336,14 +337,6 @@ img {
     margin-top: 20px;
 }
 
-/* .artist-content-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-} */
-
 .artist-content-1,
 .artist-content-2 {
     display: flex;
@@ -352,23 +345,6 @@ img {
     gap: 1rem;
     margin: 20px 0 30px;
 }
-
-/* .artist-content-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.artist-content-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-} */
 
 .artist-content-1 h3,
 .artist-content-2 h3 {
@@ -440,24 +416,6 @@ img {
     text-align: center;
 }
 
-/* 
-.artist-content-1 h3 {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-bottom: 16px;
-    font-weight: 600;
-} */
-
-/* .artist-content-1 p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-top: 10px;
-    margin-bottom: 18px;
-    width: 55ch;
-} */
-
-
 /* artworks page styles */
 .container-3 {
     display: flex;
@@ -466,7 +424,7 @@ img {
 }
 
 #artworks h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     color: var(--black);
     font-weight: 700;
@@ -474,7 +432,8 @@ img {
 }
 
 #artworks img {
-    max-width: 380px;
+    display: inline-block;
+    max-width: 350px;
     height: auto;
     overflow: hidden;
     object-fit: fill;
@@ -493,7 +452,7 @@ img {
 
 #artworks p {
     text-align: center;
-    font-size: 0.80rem;
+    font-size: 0.70rem;
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -508,12 +467,11 @@ design for larger screens. !!!! */
 /* media queries (medium) */
 /* previous media query was min-width: 768px */
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .container-1,
     .container-2,
     .container-3 {
-        width: 90%;
-        max-width: 900px;
+        width: 100%;
     }
 
     .global-header {
@@ -526,13 +484,17 @@ design for larger screens. !!!! */
         gap: 0.80rem;
     }
 
+    .global-nav ul li a {
+        font-size: 1.1rem;
+    }
+
     .hero-image {
         display: flex;
         justify-content: center;
     }
 
     .hero-image img {
-        max-width: 800px;
+        max-width: 900px;
         width: 100%;
     }
 
@@ -548,15 +510,17 @@ design for larger screens. !!!! */
 
     #our-mission h3,
     #about-info h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 16px;
         font-weight: 700;
+        text-align: center;
     }
 
     #our-mission p,
     #about-info p {
-        font-size: 1rem;
+        font-size: 0.90rem;
         max-width: 70ch;
+        text-align: center;
     }
 
     #featured-artist h3,
@@ -630,89 +594,58 @@ design for larger screens. !!!! */
 
     .artist-content-1,
     .artist-content-2 {
-        grid-template-columns: 280px 1fr;
-        gap: 3rem;
-        max-width: 1000px;
-        margin: 0 auto 4rem;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 4rem;
+        align-items: center;
 }
 
-    .artist-1-image img,
-    .artist-2-image img,
-    .artist-3-image img,
-    .artist-4-image img {
-        display: block;
-        width: 280px;
-        height: auto;
+    #artists img {
+        width: 210px;
+        height: 260px;
+        object-fit: cover;
     }
 
-    .artist-content-2 .artist-2-image,
-    .artist-content-2 .artist-4-image {
-        order: 1;
+    #artists a {
+        width: 180px;
+        align-self: center;
     }
 
-    /* .artist-content-2 .artist-2-info,
-    .artist-content-2 .artist-4-info {
-        order: 2;
-    } */
-
-    .artist-content-1,
-    .artist-content-2 {
-        max-width: 1200px;
-        margin: 0 auto 4rem;
-}
-
-    .artist-content-1 h3,
-    .artist-content-2 h3 {
-        font-size: 1.4rem;
-        margin-top: 18px;
+    #artists h3 {
+        font-size: 1.2rem;
         margin-bottom: 18px;
         font-weight: 600;
         text-align: center;
     }
     
-    .artist-content-1 p,
-    .artist-content-2 p {
+    #artists p {
         font-size: 0.80rem;
         line-height: 1.6;
-        margin-top: 10px;
-        margin-bottom: 18px;
-        max-width: none;
         text-align: left;
     }
 
-    .artist-info-1,
-    .artist-2-info,
-    .artist-3-info,
-    .artist-4-info {
-        width: 100%;
-        text-align: left;
-    }
-
-    .artist-1-info a,
-    .artist-2-info a,
-    .artist-3-info a,
-    .artist-4-info a {
+    #artists a {
         width: 300px;
         font-size: 0.85rem;
         text-align: center;
         justify-self: center;
-        margin-left: 0;
+        justify-self: center;
     }
 
     #artworks img {
-        max-width: 500px;
+        width: 400px;
         height: auto;
     }
 
     #artworks h3 {
         text-align: center;
-        font-size: 0.90rem;
+        font-size: 0.85rem;
         margin-bottom: 14px;
         font-weight: 600;
     }
 
     #artworks p {
-        font-size: 0.90rem;
+        font-size: 0.70rem;
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 20px;
@@ -727,8 +660,7 @@ design for larger screens. !!!! */
     .container-1,
     .container-2,
     .container-3 {
-        width: 90%;
-        max-width: 1200px;
+        width: 100%;
     }
 
     .global-header {
@@ -742,7 +674,7 @@ design for larger screens. !!!! */
     }
 
     .global-nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-image img {
@@ -817,10 +749,10 @@ design for larger screens. !!!! */
     .artist-content-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 2rem;
         align-items: center;
     }
-
+/* 
     .artist-content-2 .artist-2-image,
     .artist-content-2 .artist-4-image {
         order: 2;
@@ -829,60 +761,38 @@ design for larger screens. !!!! */
     .artist-content-2 .artist-2-info,
     .artist-content-2 .artist-4-info {
         order: 1;
+    } */
+
+    #artists img {
+        width: 350px;
+        height: auto;
     }
 
-    .artist-content-1 h3,
-    .artist-content-2 h3 {
-        font-size: 1.7rem;
+    #artists h3 {
+        font-size: 1.5rem;
         margin-top: 8px;
-        margin-bottom: 30px;
         font-weight: 600;
         text-align: center;
     }
 
-    .artist-1-info,
-    .artist-2-info,
-    .artist-3-info,
-    .artist-4-info {
-    max-width: 600px;
-}
-
-    .artist-content-1 p,
-    .artist-content-2 p {
-        font-size: 0.90rem;
+    #artists p {
+        font-size: 0.85rem;
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 18px;
-        max-width: 55ch;
         text-align: left;
-    }
-
-    .artist-1-image img,
-    .artist-2-image img,
-    .artist-3-image img,
-    .artist-4-image img {
-        width: 240px;
-        height: 300px;
-        object-fit: cover;
     }
 
     #artworks {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
-        max-width: 1200px;
         margin: 0 auto;
     }
 
     #artworks h2 {
         grid-column: 1 / -1;
     }
-
-    /* #artworks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
 
     #artworks img {
         max-width: 500px;
