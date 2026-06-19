@@ -191,8 +191,10 @@ footer {
 
 /* homepage styles */
 .global-header img {
-    max-width: 300px;
+    max-width: 50px;
     height: auto;
+    font-size: 0.50rem;
+    text-align: center;
 }
 
 .container-1 h2 {
