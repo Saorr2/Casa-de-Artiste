@@ -11,10 +11,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+        
         <!-- after completing my html for all three pages, make sure to properly link 
         css stylesheet to each page -->
 
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -22,7 +29,7 @@
 
         <header class="global-header">
                 <!-- add logo to src tag -->
-                <!-- <img src="images/" alt="Casa de Artisté logo"> -->
+                <img src="images/Casa de Artiste Logo.svg" alt="Casa de Artisté logo">
                 <h1>Casa de Artisté</h1>
                 <nav class="global-nav">
                     <!-- make sure I've properly linked each page to the correct 
@@ -36,9 +43,33 @@
         </header>
 
         <main class="container-1">
-            <div class="hero-image">
-                <img src="images/hero-image.jpg" alt="windows of a house in the sunlight with red, blue, and yellow designed hispanic flags hanging directly from each side of houses throughout the streets of the city.">
-            </div>
+            <style type="text/css">
+                .bx-wrapper .bx-pager {
+                    bottom: -95px;
+                    visibility: hidden;
+                }
+
+                .bx-wrapper .bx-pager a {
+                    display: block;
+                    /* margin: 0 5px;
+                    padding: 3px; */
+                }
+
+                .bx-wrapper .bx-pager a:hover,
+                .bx-wrapper .bx-pager a.active {
+                    border: none;
+                }
+
+                .bx-wrapper {
+                    margin-bottom: 10px;
+                }
+                </style>
+
+                <ul class="bxslider">
+                    <li><img src="images/hero-image.jpg" alt="mexican cultural red, yellow, and blue flags hanging from buildings."></li>
+                    <li><img src="images/divyadarshi-acharya-xxl02mZNWI8-unsplash.jpg" alt="mexican inspired street art mural painting."></li>
+                    <li><img src="images/the-bus-frida-kahlo-1929.jpg" alt="frida kahlo the bus painting created in 1929."></li>
+                </ul>
             <h2>Casa de Artisté</h2>
 
             <section id="our-mission">
@@ -57,14 +88,9 @@
             serves as an introduction to the entire website. -->
             <section id="about-info">
                 <h3>About Casa de Artisté</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua.
+                <p>Casa de Artisté “House of the artist” provides users with a museum-inspired digital design and experience. 
+                    Embracing and celebrating influential Hispanic artists. Along with their artworks, culture, and who they were 
+                    as a person. And educating culturally curious visitors and inspiring art students.
                 </p>
             </section>
 

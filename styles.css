@@ -129,16 +129,17 @@ html {
 /* when I create and add my logo, make sure to properly styled and sized and add some margin to the left of it 
 so that it doesn't touch the edge of the page.*/
 
-/* .global-header img {
-    max-width: 50px;
-    object-fit: fill;
-    color: var(--white);
-} */
+.global-header img {
+    max-width: 65px;
+    height: auto;
+    margin-left: 12px;
+}
 
 .global-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 9px;
 }
 
 .global-nav ul {
@@ -158,6 +159,7 @@ so that it doesn't touch the edge of the page.*/
     align-items: center;
     border-radius: 4px;
     font-size: 0.95rem;
+    text-align: center;
 }
 
 .global-nav ul li a:hover {
@@ -190,11 +192,6 @@ footer {
 /* homepage styles */
 .container-1 h2 {
     visibility: hidden;
-}
-
-.hero-image img {
-    max-width: 400px;
-    height: auto;
 }
 
 #about-info h3,
@@ -480,7 +477,7 @@ design for larger screens. !!!! */
         font-size: 1.1rem;
     }
 
-    .hero-image {
+    /* .hero-image {
         display: flex;
         justify-content: center;
     }
@@ -488,7 +485,7 @@ design for larger screens. !!!! */
     .hero-image img {
         max-width: 996px;
         height: auto;
-    }
+    } */
 
     #our-mission,
     #about-info {
@@ -668,10 +665,10 @@ design for larger screens. !!!! */
         font-size: 1.1rem;
     }
 
-    .hero-image img {
+    /* .hero-image img {
         max-width: 1385px;
         height: auto;
-    }
+    } */
 
     #our-mission,
     #about-info {
