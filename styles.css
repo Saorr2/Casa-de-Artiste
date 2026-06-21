@@ -441,11 +441,11 @@ footer {
 
 #artworks p {
     text-align: center;
-    font-size: 0.70rem;
+    font-size: 0.62rem;
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
-    max-width: 55ch;
+    max-width: 60ch;
 }
 
 
@@ -633,7 +633,7 @@ design for larger screens. !!!! */
     }
 
     #artworks p {
-        font-size: 0.70rem;
+        font-size: 0.73rem;
         line-height: 1.6;
         margin-top: 10px;
         margin-bottom: 20px;
@@ -786,18 +786,19 @@ design for larger screens. !!!! */
         height: auto;
     }
 
-    #artworks p {
-        font-size: 0.90rem;
-        line-height: 1.6;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        max-width: 60ch;
-    }
-
     #artworks h3 {
         text-align: center;
         font-size: 1rem;
         margin-bottom: 8px;
         font-weight: 600;
+    }
+
+    #artworks p {
+        font-size: 0.78rem;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 60ch;
+        text-align: center;
     }
 }
