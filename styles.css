@@ -309,7 +309,8 @@ footer {
 }
 
 .artist-1-image img,
-.artist-3-image img {
+.artist-3-image img,
+.artist-6-image img {
     max-width: 180px;
     height: auto;
     overflow: hidden;
@@ -318,7 +319,8 @@ footer {
 }
 
 .artist-2-image img,
-.artist-4-image img {
+.artist-4-image img,
+.artist-5-image img {
     max-width: 180px;
     height: auto;
     overflow: hidden;
@@ -366,7 +368,9 @@ footer {
 .artist-1-info,
 .artist-2-info,
 .artist-3-info,
-.artist-4-info {
+.artist-4-info,
+.artist-5-info,
+.artist-6-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,7 +379,9 @@ footer {
 .artist-1-info a,
 .artist-2-info a,
 .artist-3-info a,
-.artist-4-info a {
+.artist-4-info a,
+.artist-5-info a,
+.artist-6-info a{
     display: inline-block;
     background-color: var(--dk-blue);
     color: var(--white);
@@ -441,13 +447,12 @@ footer {
 
 #artworks p {
     text-align: center;
-    font-size: 0.62rem;
+    font-size: 0.64rem;
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
     max-width: 60ch;
 }
-
 
 /* !!!! after completely styling my website in mobile-first format,
 add media queries (tablets and desktops) to adjust the layout and 
@@ -627,7 +632,7 @@ design for larger screens. !!!! */
 
     #artworks h3 {
         text-align: center;
-        font-size: 0.85rem;
+        font-size: 0.80rem;
         margin-bottom: 14px;
         font-weight: 600;
     }
@@ -773,7 +778,7 @@ design for larger screens. !!!! */
     #artworks {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 4rem;
         margin: 0 auto;
     }
 
@@ -788,7 +793,7 @@ design for larger screens. !!!! */
 
     #artworks h3 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.86rem;
         margin-bottom: 8px;
         font-weight: 600;
     }
