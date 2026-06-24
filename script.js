@@ -1,7 +1,4 @@
-// $(".img-slideshow").bxSlider({
-//     infiniteLoop: true,
-//     slideWidth: 1280,
-// });
+/* JavaScript by Samantha Orr */
 
 $('.bxslider').bxSlider({
     buildPager: function(slideIndex){
