@@ -402,8 +402,8 @@ footer {
 
 .artist-content-1 a:hover,
 .artist-content-2 a:hover {
-    background-color: var(--burgundy);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: var(--burgundy);
     border-radius: 4px;
     text-decoration: none;
     transition: color 0.3s;
